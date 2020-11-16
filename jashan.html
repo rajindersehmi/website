@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    .top{
+      text-align: center;
+      background-color:#1e354a;
+      height:60px;
+      color:white;
+    }
+    .navbar{
+      background-color:white;
+      color:black;
+      border:none;
+      height:80px;
+      padding-top:20px;
+      border-radius:0;
+    }
+    .navbar-brand{
+      font-size:30px;
+      padding-left:200px;
+    }
+
+    .navbar-right{
+      padding-right:50px;
+    }
+    .active{
+      color:black;
+    }
+    .a{
+      display: block;
+      height: 500px;
+      background-image: url("./p1.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      position: relative;
+    }
+    .aa{
+      display: block;
+      width: 600px;
+      color:white;
+      position: absolute;
+      left:100px;
+      top:80px;
+    }
+    h1{
+      font-size: 60px;
+    }
+    .aaa{
+      background-color:  #1e3953;
+      border: none;
+      font-size: 20px;
+      padding: 15px;
+      border-radius:5px;
+    }
+    .aaa:hover{
+      background-color:#93c83f;
+
+    }
+    .b{
+      padding-top: 50px;
+      height: 600px;
+      text-align: center;
+    }
+    h4,h5{
+      color: grey;
+    }
+    .bb{
+      text-align: center;
+
+    }
+    .row{
+      text-align: center;
+      margin: auto;
+
+    }
+    .bbb{
+      border:1px solid grey;
+      width:340px;
+
+    }
+    .bbb:hover{
+      color: #93c83f;
+      border: 1px solid #93c83f;
+    }
+    .c{
+      display: block;
+      height: 700px;
+      background-image: url("./p2.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      background-color:#eaeaea;
+      position: relative;
+    }
+    .cc{
+      position: absolute;
+      width:420px;
+      height:550px;
+      background-color:  #1e3953;
+      color: white;
+      top:75px;
+      right:300px;
+      padding: 40px;
+
+    }
+    .ccc1{
+      position: absolute;
+      width:150px;
+      height:150px;
+      background-color:  #1e3953;
+      color: white;
+      top:125px;
+      right:150px;
+      border-left: 1px solid black;
+      border-bottom: 1px solid black;
+      text-align: center;
+    }
+    .ccc2{
+      position: absolute;
+      width:150px;
+      height:150px;
+      background-color:  #1e3953;
+      color: white;
+      top:275px;
+      right:150px;
+      text-align: center;
+      border-left: 1px solid black;
+      border-bottom: 1px solid black;
+    }
+    .ccc3{
+      position: absolute;
+      width:150px;
+      height:150px;
+      background-color:  #1e3953;
+      color: white;
+      top:425px;
+      right:150px;
+      text-align: center;
+      border-left: 1px solid black;
+      border-bottom: 1px solid black;
+    }
+    .cccc{
+      background-color:  #1e3953;
+      border: 2px solid white;
+      font-size: 20px;
+      padding: 15px;
+      border-radius:5px;
+    }
+    .cccc:hover{
+      background-color:#93c83f;
+      border: 2px solid #93c83f;
+
+    }
+    ul{
+      list-style-type: none;
+      list-style-position: inherit;
+    }
+    .glyphicon{
+      color: #93c83f;
+    }
+    .d{
+      text-align: left;
+      padding-top: 50px;
+      height: 500px;
+
+    }
+    .v{
+      text-align: left;
+      color:grey;
+    }
+    .vv{
+      background-color: #f2f2f2;
+      border:2px solid #f2f2f2;
+      border:none;
+      padding: 10px;
+      border-radius:5px;
+    }
+    .vv:hover,.vv:focus,.vv:active{
+      border:2px solid #93c83f;
+    }
+    .z{
+      padding: 50px;
+    }
+    .e{
+      text-align: center;
+      height:600px;
+      position: relative;
+      align-items: center;
+    }
+    .ee{
+      height: 275px;
+      padding-top: 50px;
+      text-align: center;
+      background-color: #f2f2f2;
+    }
+    .eee{
+      height: 325px;
+      background-color:  #1e3953;
+      padding: 150px;
+      color: white;
+    }
+    .eee1{
+      position: absolute;
+      top:200px;
+      left:45%;
+    }
+    .eee3{
+      position: absolute;
+      top:225px;
+      left:60%;
+    }
+    .eee2{
+      position: absolute;
+      top:225px;
+      left:33%;
+    }
+    .f{
+      padding-top: 50px;
+      height: 550px;
+      text-align: center;
+    }
+    }
+    .ff{
+      text-align: center;
+    }
+    .fff{
+      border:1px solid lightgrey;
+      width:270px;
+    }
+    .ff1{
+    display: inline;
+    text-transform: uppercase;
+    font-family: accent;
+    padding-left: 2px;
+
+    }
+    .ff1>li{
+      display: inline;
+      font-size: 12px;
+      padding-right: 12px
+    }
+    .ff1>li>span>a{
+      color: #93c83f;
+    }
+    .offset-top-5{
+      padding-top: 5px;
+      padding-bottom: 15px;
+    }
+    .ff2{
+      padding-top: 7px;
+      font-weight: bold;
+      font-size: 18px;
+      color:black;
+    }
+    .ff2>a{
+      color: black;
+    }
+    .g{
+      height:350px;
+      background-color: #1e3953;
+      padding-top: 50px;
+      color:white;
+    }
+    .g3,.g1{
+      text-align: left;
+    }
+    .g2,.g2>.container-fluid,.g2>.container-fluid>.row,.g2>.container-fluid>.row>.col-sm-5{
+      text-align: left;
+
+    }
+    .g2>h3{
+      margin-left: 30px;
+    }
+    .t{
+      padding-right: 70px;
+    }
+
+  </style>
+</head>
+<body>
+<div class="top"><br>
+  <span class="t"><i class="glyphicon glyphicon-map-marker"></i> 267 Park Avenue New York, NY 90210</span>
+  <span class="t"><i class="glyphicon glyphicon-time"></i> Mon – Sat: 9:00am–18:00pm. Sunday CLOSED</span>
+  <span class="t"><i class="glyphicon glyphicon-earphone"></i> +1 (409) 987–5874</span>
+
+</div>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">TaxExpert</a>
+    </div>
+    <ul class="nav navbar-nav">
+
+    </ul>
+
+    <ul class="nav navbar-nav navbar-right">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#">Page 1</a></li>
+      <li><a href="#">Page 2</a></li>
+      <li><a href="#">Page 3</a></li>
+      <li><a href="#">Page 4</a></li>
+      <li><a href="#">Page 5</a></li>
+      <li><a href="#">Page 6</a></li>
+      <form class="navbar-form navbar-left" action="/action_page.php">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Search" name="search">
+          <div class="input-group-btn">
+            <button class="btn btn-default" type="submit">
+              <i class="glyphicon glyphicon-search"></i>
+            </button>
+          </div>
+        </div>
+      </form>
+    </ul>
+  </div>
+</nav>
+
+<div class="a">
+  <div class="aa">
+    <h1>Our Clients Don't Have Tax Problems</h1>
+    <h3>Optimize tax costs using our years of experience</h3><br>
+    <button class="aaa" type="button" name="button">MAKE AN APPOINTMENT</button>
+  </div>
+</div>
+<div class="b container">
+  <div class="row">
+    <h1>Our Services</h1>
+    <h4>We provide expert tax and advisory services to individuals and small businesses.</h4>
+  </div><br><br><br><br>
+  <div class="row">
+    <div class="col-sm-4 bb">
+      <div class="bbb"><br>
+        <img src="1.png" alt="">
+        <h3>Tax Planning</h3>
+        <hr>
+        <h5>Planning is the key to successfully and legally reducing your tax liability.</h5><br><br>
+      </div>
+    </div>
+    <div class="col-sm-4 bb">
+      <div class="bbb"><br>
+        <img src="2.png" alt="">
+        <h3>Bookkeeping</h3>
+        <hr>
+        <h5>We’ll create a chart of accounts to capture all your financial transactions.</h5><br><br>
+      </div>
+    </div>
+    <div class="col-sm-4 bb">
+      <div class="bbb"><br>
+        <img src="3.png" alt="">
+        <h3>Bank Reconciliation</h3>
+        <hr>
+        <h5>Every deposit and withdrawal aligns with entries into your accounting records.</h5><br><br>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+<div class="c">
+  <div class="cc">
+    <h1>About Us</h1><br>
+    <h5 style="color:white;">We are dedicated to providing professional service with the highest degree of honesty and integrity, and strive to add value to our tax and consulting services.</h5>
+    <br>
+    <br>
+    <ul>
+      <li><span class="glyphicon glyphicon-ok"></span>  Highly Competent Professionals</li>
+      <li><span class="glyphicon glyphicon-ok"></span>  Affordable Prices</li>
+      <li><span class="glyphicon glyphicon-ok"></span>  High Successful Recovery</li>
+    </ul><br><br>
+    <button class="cccc" type="button" name="button">MAKE AN APPOINTMENT</button>
+  </div>
+  <div class="ccc1">
+    <h1>23</h1>
+    <h4>Consultants</h4>
+  </div>
+  <div class="ccc2">
+    <h1>546</h1>
+    <h4>Happy Clients</h4>
+  </div>
+  <div class="ccc3">
+    <h1>17</h1>
+    <h4>Years of Experience</h4>
+  </div>
+</div>
+<div class="d container">
+  <div class="row">
+    <div class="col-sm-6">
+      <h1>Tax Calculator</h1>
+      <br>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-6 v">
+            Choose Your Bussiness Area:<br><br>
+            <input class="vv" type="text" name="" placeholder="Retail" value="">
+          </div>
+          <div class="col-sm-6 v">
+            Country of residence:<br><br>
+            <input  class="vv" type="text" name="" placeholder="US Residence" value="">
+          </div>
+        </div><br>
+        <div class="row">
+          <div class="col-sm-6 v">
+            Employees Number:<br><br>
+            <input class="vv" type="text" name="" placeholder="1-5" value="">
+          </div>
+          <div class="col-sm-6 v">
+            Yearly Income:<br><br>
+            <input class="vv" type="text" name="" placeholder="" value="">
+          </div>
+        </div><br>
+        <div class="row">
+          <div class="col-sm-6 v">
+            Total Payment:<br><br>
+            <input class="vv" type="text" name="" placeholder="Retail" value="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 z">
+      <img src="cal.png" alt="" height="400px">
+    </div>
+  </div>
+</div>
+<div class="e">
+  <img class="eee1" src="e1.jpg" alt="" height="150px" width="150px">
+  <img class="eee2" src="e2.jpg" alt="" height="100px" width="100px">
+  <img class="eee3" src="e3.jpg" alt="" height="100px" width="100px">
+  <div class="ee">
+    <h1>Testimonials</h1>
+  </div>
+  <div class="eee">
+    <blockquote class="ee1">
+      <p>
+        <q>TaxExpert’s expertise and knowledge of USA and Indian Tax law assisted me in answering tricky tax questions and being able to better understand the tax implications of various financial transactions internationally. Very professional team!</q>
+      </p>
+      <cite>Mark Wilson</cite>
+    </blockquote>
+  </div>
+</div>
+<div class="f">
+  <h1>Latest News</h1>
+  <br><br>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3 ff">
+        <div class="fff">
+          <div class=""><a href="#"><img src="f1.jpg" alt="" width="268" height="182"/></a></div>
+          <div class="">
+            <div class="ff2"><a href="#">The Top 5 Tax Paper Downloads</a></div>
+            <div class="offset-top-5">
+              <ul class="ff1">
+                <li>JUNE 14, 2016</li>
+                <li><span>by <a href="#" class="text-primary">Sam Kromstain</a></span></li><br>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3 ff">
+        <div class="fff">
+          <div class=""><a href="#"><img src="f2.jpg" alt="" width="268" height="182"/></a></div>
+          <div class="">
+            <div class="ff2"><a href="#">Exploring American Taxes: Then & Now</a></div>
+            <div class="offset-top-5">
+              <ul class="ff1">
+                <li>JUNE 20, 2016</li>
+                <li><span>by <a href="#" class="text-primary">Vanessa Ives</a></span></li><br>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3 ff">
+        <div class="fff">
+          <div class=""><a href="#"><img src="f3.jpg" alt="" width="268" height="182"/></a></div>
+          <div class="">
+            <div class="ff2"><a href="#">The Tax Consequences Of Brexit</a></div>
+            <div class="offset-top-5">
+              <ul class="ff1">
+                <li>JUNE 23, 2016</li>
+                <li><span>by <a href="#" class="text-primary">Amanda Smith</a></span></li><br>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3 ff">
+        <div class="fff">
+          <div class=""><a href="#"><img src="f4.jpg" alt="" width="268" height="182"/></a></div>
+          <div class="">
+            <div class="ff2"><a href="#">What You Need to File Your Taxes This Year</a></div>
+            <div class="offset-top-5">
+              <ul class="ff1">
+                <li>JUNE 12, 2016</li>
+                <li><span>by <a href="#" class="text-primary">David Nicholson</a></span></li><br>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="g">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4 g1">
+        <h3>ABOUT US</h3><br><br>
+        Our firm has been providing expert tax and consulting services to individuals and small businesses throughout the country since 1989.<br>
+        <h3><span><i class="glyphicon glyphicon-earphone"></i></span> +1 (409) 987–5874</h3>
+        info@demolink.org
+
+      </div>
+      <div class="col-sm-4 g2">
+        <h3>QUICK LINKS</h3><br><br>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-5">
+                <span><i class="glyphicon glyphicon-chevron-right"></i></span> Home
+            </div>
+            <div class="col-sm-5">
+                <span><i class="glyphicon glyphicon-chevron-right"></i></span> About Us
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-5">
+                <span><i class="glyphicon glyphicon-chevron-right"></i></span> Services
+            </div>
+            <div class="col-sm-5">
+                <span><i class="glyphicon glyphicon-chevron-right"></i></span> Contacts
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-5">
+                <span><i class="glyphicon glyphicon-chevron-right"></i></span> Careers
+            </div>
+            <div class="col-sm-5">
+                <span><i class="glyphicon glyphicon-chevron-right"></i></span> Appointment
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-5">
+                <span><i class="glyphicon glyphicon-chevron-right"></i></span> Blog
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4 g3">
+        <h3>SUBSCRIBE</h3><br><br>
+        Get the latest updates and offers.<br><br>
+        <div class="input-group">
+          <input type="text" class="form-control " placeholder="Enter Your Email" name="search">
+          <div class="input-group-btn">
+            <button class="btn btn-default" style="background-color:#93c83f;" type="submit">
+              <i class="glyphicon glyphicon-envelope" style="color:white;"></i>
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+<div class="top"><br>
+  © 2020TaxExpert. Privacy Policy
+</div>
+</body>
+</html>
